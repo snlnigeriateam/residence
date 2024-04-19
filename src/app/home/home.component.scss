@@ -44,3 +44,53 @@
 .spacing {
     line-height: 2em;
 }
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.break {
+    height: 5px;
+}
+
+.content-spacing {
+    margin: 10px 0px;
+}
+
+.t {
+    width: 45%;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-img {
+    width: 49%;
+    border-radius: 12px;
+}
+
+.img-l {
+    border-radius: 12px 0px 0px 12px;
+}
+
+.img-r {
+    border-radius: 0px 12px 12px 0px;
+}
+
+.body-img-card {
+    width: 100%;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+.body-img {
+    border-radius: 12px;
+}

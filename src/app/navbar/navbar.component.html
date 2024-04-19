@@ -11,7 +11,7 @@
 			SNL Nigeria
 		</div>
 		<div class="mobile-nav">
-			<span (click)="drawer.toggle()" class="mobile-nav-item"><a href="#book">Book a Stay</a></span>
+			<span (click)="drawer.toggle()" class="mobile-nav-item"><a href="tel:{{contact_num}}">Book a Stay</a></span>
 		</div>
 	</mat-drawer>
 	<mat-drawer-content>
@@ -23,7 +23,7 @@
 							<img src="/assets/icon-white.png" alt="SNL Logo" [routerLink]="['/']" class="logo pointer">
 						</span>
 					</div>
-					<span class="text-span hov" [routerLink]="['/']">SNL Nigeria</span>
+					<span class="text-span hov" [routerLink]="['/']">SNL Nigeria - The Residence</span>
 				</div>
 			</div>
 			<button mat-icon-button (click)="drawer.toggle()">
@@ -43,12 +43,12 @@
 						<img src="/assets/icon-white.png" alt="SNL Logo" [routerLink]="['/']" class="logo pointer">
 					</span>
 				</div>
-				<span class="text-span hov" [routerLink]="['/']">SNL Nigeria</span>
+				<span class="text-span hov" [routerLink]="['/']">SNL Nigeria - The Residence</span>
 			</div>
 			<div>
 				<!-- <span class="nav-item"><a [routerLink]="['/team']">Our team</a></span> -->
 				<span class="nav-item">
-					<button href="#book" class="button p-btn hov">Book a Stay</button>
+					<button class="button p-btn hov" (click)="book()">Book a Stay</button>
 				</span>
 				<!-- <span class="nav-item"><a [routerLink]="['/contact']">Contact</a></span> -->
 			</div>
