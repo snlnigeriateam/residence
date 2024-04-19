@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 28px 32px;
+}
+
+.head1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.content1 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #29292c;
+}
+
+.head2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.col1 {
+    color: #d3d3d3;
+}
+
+.content3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.spacing {
+    line-height: 2em;
+}

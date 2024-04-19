@@ -1,0 +1,48 @@
+@import "variables.scss";
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 28px 32px;
+    border-radius: 12px;
+    border: 1px solid #d3d3d3;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.f-l {
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.f-r {
+    margin-right: 20px;
+}
+
+.s1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img-div {
+    height: 20px;
+    width: 20px;
+    // margin-top: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: $primary;
+}
+
+.text-span {
+    margin-right: 30px;
+    font-size: 14pt;
+    font-weight: 600;
+    align-self: center;
+}
+
+.logo {
+    height: 100%;
+}
