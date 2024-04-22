@@ -1,11 +1,32 @@
 <div class="home-div">
-	<div class="main">
+	<div class="main" id="main">
+		<!-- <div class="carousel-div">
+			<button (click)="scrollLeft()" class="back-button" mat-icon-button aria-label="Icon button to swipe left">
+				<mat-icon>arrow_back_ios</mat-icon>
+			</button>
+			<div class="carousel" id="carousel">
+				<mat-card class="carousel-img">
+					<img class="slide-img" src="/assets/home/1.jpg"
+						alt="Photo showing the parking canopy outside the premises">
+				</mat-card>
+				<mat-card class="carousel-img">
+					<img class="slide-img" src="/assets/home/2.jpg"
+						alt="Photo showing the living room of the premises with couches, a center table and a television">
+				</mat-card>
+			</div>
+			<button class="forward-button" mat-icon-button aria-label="Icon button to swipe right">
+				<mat-icon>arrow_forward_ios</mat-icon>
+			</button>
+		</div> -->
+
 		<div class="images">
 			<mat-card class="card-img">
-				<img class="top-img img-l" src="/assets/home/1.jpg" alt="Photo showing the parking canopy outside the premises">
+				<img class="top-img img-l" src="/assets/home/1.jpg"
+					alt="Photo showing the parking canopy outside the premises">
 			</mat-card>
 			<mat-card class="card-img">
-				<img class="top-img img-r" src="/assets/home/2.jpg" alt="Photo showing the living room of the premises with couches, a center table and a television">
+				<img class="top-img img-r" src="/assets/home/2.jpg"
+					alt="Photo showing the living room of the premises with couches, a center table and a television">
 			</mat-card>
 		</div>
 		<br><br>
@@ -125,22 +146,26 @@
 			</div>
 			<div class="t2 t">
 				<mat-card class="card">
-					<div class="head1">₦{{this.utilities.format_float(this.unit_cost.toString())}} <span class="content4">per night</span></div>
+					<div class="head1">₦{{this.utilities.format_float(this.unit_cost.toString())}} <span
+							class="content4">per night</span></div>
 					<br>
 					<mat-form-field class="c-input" appearance="fill" color="primary">
 						<mat-label>Duration of Stay (days)</mat-label>
 						<input type="number" matInput [(ngModel)]="stay" min="1" max="30" (change)="updateTotal()">
 					</mat-form-field>
 					<br>
-					<div class="head1 right-text">₦{{this.utilities.format_float(this.total.toString())}} <span class="content4">total</span></div>
+					<div class="head1 right-text">₦{{this.utilities.format_float(this.total.toString())}} <span
+							class="content4">total</span></div>
 				</mat-card>
 				<br><br>
 				<mat-card class="body-img-card">
-					<img class="body-img" src="/assets/home/3.jpg" alt="Photo showing the dining room of the premises with chairs, a table, a drinks cabinet, a television and a piece of art on the wall">
+					<img class="body-img" src="/assets/home/3.jpg"
+						alt="Photo showing the dining room of the premises with chairs, a table, a drinks cabinet, a television and a piece of art on the wall">
 				</mat-card>
 				<br>
 				<mat-card class="body-img-card">
-					<img class="body-img" src="/assets/home/4.jpg" alt="Photo showing the kitchen of the premises with a refrigerator, a microwave, four-burner cooker and cabinets">
+					<img class="body-img" src="/assets/home/4.jpg"
+						alt="Photo showing the kitchen of the premises with a refrigerator, a microwave, four-burner cooker and cabinets">
 				</mat-card>
 			</div>
 		</div>
