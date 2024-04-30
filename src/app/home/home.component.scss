@@ -144,7 +144,8 @@
 .swiper-div {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    // height: 100vh;
+    width: 100%;
 }
 
 .s-l, .s-r {
@@ -158,14 +159,17 @@
     align-items: center;
 }
 
-.swiper-img, .swiper-img-card, .swiper {
-    height: 100%;
+.swiper-img-card, .swiper {
+    width: 100%;
 }
+
 
 .swiper-img {
     display: block;
     margin: 0 auto;
     border-radius: 12px;
+    width: 95%;
+    max-height: 100vh;
 }
 
 .back-button, .forward-button {
