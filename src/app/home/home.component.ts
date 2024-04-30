@@ -11,16 +11,19 @@ export class HomeComponent {
 	total: number = 45000;
 	unit_cost: number = 15000;
 
-	carousel!: HTMLDivElement;
-	main!: HTMLDivElement;
+	// carousel!: HTMLDivElement;
+	// main!: HTMLDivElement;
+
+	cImg: number = 1;//switch to object with alt text. Object can be separate from this item
+	maxImages: number = 9;
 
 	constructor(
 		public utilities: UtilitiesService
 	) {}
 
 	ngAfterViewInit() {
-		this.main = <HTMLDivElement>document.getElementById('main');
-		this.carousel = <HTMLDivElement>document.getElementById('carousel');
+		// this.main = <HTMLDivElement>document.getElementById('main');
+		// this.carousel = <HTMLDivElement>document.getElementById('carousel');
 	}
 
 	updateTotal() {
@@ -31,6 +34,39 @@ export class HomeComponent {
 	}
 
 	scrollLeft() {
-		console.log(this.carousel.offsetLeft);
+		// console.log(this.carousel.offsetLeft);
+		if(this.cImg > 1){
+			this.cImg--;
+		}
+
+		if(this.cImg === 1){
+			this.disableButton(true);
+		}
+
+		if(this.cImg < this.maxImages){
+			this.enableButton(false);
+		}
+	}
+
+	scrollRight() {
+		if(this.cImg < this.maxImages){
+			this.cImg++;
+		}
+
+		if(this.cImg === this.maxImages){
+			this.disableButton(false);
+		}
+
+		if(this.cImg > 1){
+			this.enableButton(true);
+		}
+	}
+
+	disableButton(back: boolean){
+		document.getElementById(back ? 'back-button' : 'forward-button')?.classList.add('disabled-button');
+	}
+
+	enableButton(back: boolean){
+		document.getElementById(back ? 'back-button' : 'forward-button')?.classList.remove('disabled-button');
 	}
 }

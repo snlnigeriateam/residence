@@ -19,7 +19,7 @@
 			</button>
 		</div> -->
 
-		<div class="images">
+		<!-- <div class="images">
 			<mat-card class="card-img">
 				<img class="top-img img-l" src="/assets/home/1.jpg"
 					alt="Photo showing the parking canopy outside the premises">
@@ -28,6 +28,24 @@
 				<img class="top-img img-r" src="/assets/home/2.jpg"
 					alt="Photo showing the living room of the premises with couches, a center table and a television">
 			</mat-card>
+		</div> -->
+		<div class="swiper-div">
+			<div class="s-l">
+				<button (click)="scrollLeft()" class="back-button disabled-button" id="back-button" mat-icon-button aria-label="Icon button to swipe left">
+					<mat-icon>arrow_back_ios</mat-icon>
+				</button>
+			</div>
+			<div class="s-c" id="swiper">
+				<div class="swiper-img-card">
+					<img class="swiper-img" src="/assets/home/{{cImg}}.jpg"
+						alt="Photo showing the parking canopy outside the premises">
+				</div>
+			</div>
+			<div class="s-r">
+				<button (click)="scrollRight()" class="forward-button" id="forward-button" mat-icon-button aria-label="Icon button to swipe right">
+					<mat-icon>arrow_forward_ios</mat-icon>
+				</button>
+			</div>
 		</div>
 		<br><br>
 		<div class="flex">
