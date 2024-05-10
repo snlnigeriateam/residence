@@ -181,6 +181,13 @@
     background-color: #d3d3d3;
 }
 
+.video {
+    width: 90%;
+    height: 30vh;
+    margin: 50px auto;
+    display: block;
+}
+
 @media only screen and (max-width: 600px) {
 
     //smaller mobile devices
@@ -190,6 +197,11 @@
 
     .flex {
         display: block;
+    }
+
+    .video {
+        width: 90%;
+        height: 30vh;
     }
 }
 
@@ -202,6 +214,11 @@
 
     .flex {
         display: block;
+    }
+
+    .video {
+        width: 80%;
+        height: 40vh;
     }
 }
 
@@ -216,6 +233,11 @@
         display: flex;
         justify-content: space-between;
     }
+
+    .video {
+        width: 80%;
+        height: 30vh;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -229,6 +251,11 @@
         display: flex;
         justify-content: space-between;
     }
+
+    .video {
+        width: 90%;
+        height: 30vh;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -241,5 +268,10 @@
     .flex {
         display: flex;
         justify-content: space-between;
+    }
+
+    .video {
+        width: 95%;
+        height: 40vh;
     }
 }
